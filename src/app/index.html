@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div id="headerTitleContainer">
+          <div class="background-text"></div>
+          <p class="titles">
+            Discover our <br />
+            planet-friendly offer
+          </p>
+        </div>
+        <div id="headerSliderButtonsContainer">
+          <div class="button-container">
+            <div class="background-div"></div>
+            <button class="slider-button" id="prevButton">
+              <span class="material-symbols-outlined">arrow_back_ios</span>
+            </button>
+          </div>
+          <div class="button-container">
+            <div class="background-div"></div>
+            <button class="slider-button" id="nextButton">
+              <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="productsScreen">
+        <div id="productsContainer"></div>
+      </section>
+
+      <section class="newsLetter">
+        <div class="browseProductsContainer">
+          <button class="browseProducts">BROWSE ALL PRODUCTS</button>
+        </div>
+        <div class="svgContainer">
+          <svg
+            class="svgBackground"
+            viewBox="0 0 1440 550"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1046.78 84.2501C839.09 84.2501 839.09 0 631.427 0C423.794 0 423.794 84.2501 216.13 84.2501C106.685 84.2501 54.8932 60.8592 0 38.7124V550H1440V0.355453C1254.23 6.11432 1246.79 84.2501 1046.78 84.2501Z"
+              fill="#CAF0FF"
+            />
+          </svg>
+          <img
+            src="../assets/pastilla2 1.png"
+            alt=""
+            class="inside-svg-img img1"
+          />
+          <img
+            src="../assets/pastilla3 1.png"
+            alt=""
+            class="inside-svg-img img2"
+          />
+          <img
+            src="../assets/pastilla6 1.png"
+            alt=""
+            class="inside-svg-img img3"
+          />
+          <img
+            src="../assets/pastillaverde 1.png"
+            alt=""
+            class="inside-svg-img img4"
+          />
+          <img
+            src="../assets/pastlla4 1.png"
+            alt=""
+            class="inside-svg-img img5"
+          />
+
+          <div class="contentInsideSvg">
+            <div class="textContainer">
+              <p class="newsLetterTitle">
+                Join the green revolution without commitment
+              </p>
+            </div>
+            <p class="inputText">
+              If you are missing something and don't want to miss future
+              promotions or our future products
+            </p>
+            <div class="inputContainer">
+              <input
+                id="emailInput"
+                placeholder="Your Email"
+                type="text"
+                class="newsLetterInput"
+              />
+              <button id="sendButton" class="sendButton">SEND</button>
+            </div>
+            <div
+              id="validationMessage"
+              style="color: red; margin-top: 10px"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
