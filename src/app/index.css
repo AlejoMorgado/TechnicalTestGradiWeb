@@ -141,6 +141,7 @@ header {
 }
 
 .material-symbols-outlined {
+  color: #000 !important;
   font-size: 0.7rem !important;
   font-weight: bold !important;
 }
@@ -351,30 +352,68 @@ header {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .img1 {
+    top: 42%;
+    left: 14%;
+    width: 33px;
+    height: 47.67px;
+  }
+}
 .img2 {
   top: 70%;
   right: 10.3%;
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .img2 {
+    top: 64%;
+    width: 25.88px;
+    height: 21.46px;
+  }
+}
 .img3 {
   top: 37.4%;
   right: -0.9%;
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .img3 {
+    top: 48.4%;
+    width: 38.2px;
+    height: 36.08px;
+  }
+}
 .img4 {
   top: 33%;
   left: 9%;
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .img4 {
+    top: 22%;
+    left: 15%;
+    width: 22.97px;
+    height: 22.57px;
+  }
+}
 .img5 {
   top: 38%;
   left: 23%;
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .img5 {
+    top: 26%;
+    left: 42%;
+    width: 29.95px;
+    height: 31.17px;
+  }
+}
 .contentInsideSvg {
   position: absolute;
   top: 0;
