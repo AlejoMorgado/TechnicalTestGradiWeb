@@ -12,9 +12,8 @@ DEMO : https://technical-test-gradi-web.vercel.app/
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Improvements](#improvements)
-- [Contributing](#contributing)
-- [License](#license)
+
+
 
 ## Installation
 
@@ -38,11 +37,13 @@ To run and view the JavaScript project in your browser using Visual Studio Code:
 3. This will start a development server and open the project in your default web browser.
 
 ## Technologies Used
+
 - HTML5: For structuring the content.
 - JavaScript (ES6): For implementing functionality.
 - SASS (SCSS): For styling the layout.
 
 ## Features
+
 - Responsive design that adapts to various screen sizes.
 - Structured HTML5 layout for easy readability and maintenance.
 - Modular SASS stylesheets for scalability and flexibility.
