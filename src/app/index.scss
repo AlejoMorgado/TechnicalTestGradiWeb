@@ -45,7 +45,11 @@ header {
   font-size: 13px;
   letter-spacing: 0.02em;
 }
-
+@media screen and (max-width: 1024px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 768px) {
   .headerContainer {
     flex-direction: column;
@@ -53,10 +57,13 @@ header {
 }
 
 #headerTitleContainer {
-  width: 40%;
   position: relative;
 }
-
+@media screen and (max-width: 1024px) {
+  #headerTitleContainer {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   #headerTitleContainer {
     width: 100%;
@@ -97,18 +104,23 @@ header {
 #headerSliderButtonsContainer {
   width: 12%;
   display: flex;
-  justify-content: space-between;
   align-items: end;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 2rem;
   margin-right: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  #headerSliderButtonsContainer {
+    width: 20%;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   #headerSliderButtonsContainer {
     align-items: start;
     width: 41%;
-    margin: 0px 0px 0px 20px;
+    margin: 0 0 0 20px;
   }
 }
 
@@ -288,7 +300,6 @@ header {
   text-align: center;
   margin-top: 5.8em;
   margin-bottom: 5em;
-  margin-left: 8px;
 }
 @media screen and (max-width: 768px) {
   .browseProductsContainer {
@@ -301,7 +312,6 @@ header {
   color: white;
   background-color: #f2b6a7;
   margin-top: 6.5em;
-  margin-left: 5px;
   width: 237px;
   height: 48px;
   border-radius: 100px;
@@ -541,7 +551,7 @@ header {
   height: 48px;
   margin-left: 5px;
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border-style: none;
   padding: 12px 20px 12px 20px;
   cursor: pointer;
 }

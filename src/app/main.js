@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const data = await response.json();
     products = data.products.nodes;
-    console.log(products);
     displayProducts(products, currentIndex, productsPerPage);
   } catch (error) {
     console.error("Fetch error:", error);
+    alert("There was an error fetching the products. Please try again later.");
   }
 
   const prevButton = document.getElementById("prevButton");
@@ -163,7 +163,7 @@ function getProductsPerPage() {
   const width = window.innerWidth;
   if (width <= 600) {
     return 1;
-  } else if (width <= 900) {
+  } else if (width <= 1024) {
     return 2;
   } else {
     return 3;
