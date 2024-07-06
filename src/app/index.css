@@ -150,8 +150,11 @@ header {
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-left: 5px;
   position: relative;
+}
+
+.materialLeft {
+  margin-left: 4px;
 }
 
 .material-symbols-outlined {
@@ -180,19 +183,26 @@ header {
     display: unset;
   }
 }
+.productInfoContainer {
+  width: 95%;
+}
+
 .product {
   padding: 10px;
   margin: 10px;
   width: 320px;
   height: 460px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .product img {
   border-radius: 15px 15px 0 0;
-  width: 320px;
+  width: 325px;
   height: 320px;
-  gap: 0px;
-  opacity: 0px;
+  clip-path: inset(5px 5px 5px 5px round 15px);
 }
 
 .seeMoreButtonContainer {

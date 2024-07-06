@@ -87,6 +87,7 @@ function displayProducts(products, startIndex, productsPerPage) {
       <div class="seeMoreButtonContainer">
         <button class="seeMoreButton">SEE MORE</button>
       </div>
+      <div class='productInfoContainer'>
       <h3 class='productTitle'>${product.title}</h3>
       <div class="productDescription">
         <div class="rating">
@@ -97,6 +98,7 @@ function displayProducts(products, startIndex, productsPerPage) {
         <div class="price">
           <p>${currencySymbol}${formattedPrice} </p>
         </div>
+      </div>
       </div>
       <div class="addToCartButtonContainer">
         <button class="addToCartButton">ADD TO CART</button>
