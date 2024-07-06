@@ -27,7 +27,11 @@ To run this project locally, follow these steps:
     ```sh
     cd gradi-web-technical-test
     ```
-
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+    
 ## Usage
 
 To run and view the JavaScript project in your browser using Visual Studio Code:
