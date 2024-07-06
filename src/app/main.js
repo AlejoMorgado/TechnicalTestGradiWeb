@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     displayProducts(products, currentIndex, productsPerPage);
   });
 
-  // Validation for email input
   const sendButton = document.getElementById("sendButton");
   const emailInput = document.getElementById("emailInput");
   const validationMessage = document.getElementById("validationMessage");
@@ -49,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     event.preventDefault();
     const emailValue = emailInput.value;
     if (validateEmail(emailValue)) {
-      validationMessage.textContent = "Email is valid!";
+      validationMessage.textContent = "Thank you for subscribing!!";
       validationMessage.style.color = "green";
     } else {
       validationMessage.textContent = "Please enter a valid email address.";
@@ -108,9 +107,11 @@ function displayProducts(products, startIndex, productsPerPage) {
 }
 
 function formatPrice(price) {
-  return price.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
-}
+  let priceStr = parseFloat(price).toFixed(2);
 
+  priceStr = priceStr.replace(".", ",");
+  return priceStr;
+}
 function getProductCurrencySymbol(currencyCode) {
   switch (currencyCode) {
     case "EUR":

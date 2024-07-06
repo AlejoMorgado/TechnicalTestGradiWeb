@@ -25,7 +25,7 @@ header {
   justify-content: center;
   height: 32px;
   width: 100%;
-  background-color: #f2d1c8;
+  background-color: #f2b6a7;
 }
 
 .headerContainer {
@@ -117,7 +117,7 @@ header {
   position: absolute;
   width: 70px;
   height: 24px;
-  background-color: #f2d1c8;
+  background-color: #f2b6a7;
   border-radius: 15px;
   top: 50%;
   left: 50%;
